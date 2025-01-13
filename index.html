@@ -25,12 +25,16 @@
       src="https://kit.fontawesome.com/9eb162ac0d.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles2.css" />
     <!-- JavaScript -->
-    <script type="module" src="src/main2.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -59,21 +63,23 @@
     <main>
       <!-- Home -->
       <section id="home">
-        <div class="home__container">
+        <div class="max-container home__container">
           <img
             class="home__avatar"
             src="imgs/profile.png"
             alt="Lisa's profile"
           />
-          <h2 class="home__title">
-            Hello <br />
-            I&#39;m <strong class="home__title--strong">Dream Coder</strong>,
-            Lisa
-          </h2>
-          <p class="home__description">
-            A Software Engineer currently residing in Gimhae, South Korea
-          </p>
-          <a class="home__contact" href="#contact">Contact Me</a>
+          <div>
+            <h2 class="home__title" aria-lable="Hello, I'm Dream Coder Lisa">
+              Hello <br />
+              I&#39;m <strong class="home__title--strong">Dream Coder</strong>,
+              Lisa
+            </h2>
+            <p class="home__description">
+              A Software Engineer currently residing in Gimhae, South Korea
+            </p>
+            <a class="home__contact" href="#contact">Contact Me</a>
+          </div>
         </div>
       </section>
 
